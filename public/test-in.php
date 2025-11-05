@@ -11,6 +11,7 @@ try {
     $pdo = new PDO($dsn, $user2, $pass2);
     echo "✅ Connected successfully! Internal DB";
     echo "</br><a href='/test-ex.php' >Test External</a>";
+    echo "</br><a href='/' >Finish Test</a>";
 } catch (\PDOException $e) {
     echo "❌ Connection failed: " . $e->getMessage();
 }
